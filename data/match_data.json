@@ -1,0 +1,168 @@
+{
+  "matchInfo": {
+    "id": "6lqto88nzncqhvtv45a0rmcyc",
+    "coverageLevel": "13",
+    "date": "2025-11-09Z",
+    "time": "16:00:00Z",
+    "localDate": "2025-11-09",
+    "localTime": "16:00:00",
+    "week": "12",
+    "numberOfPeriods": 2,
+    "periodLength": 45,
+    "var": "1",
+    "lastUpdated": "2025-11-12T10:59:52Z",
+    "description": "Celtic vs Kilmarnock",
+    "sport": { "id": "289u5typ3vp4ifwh5thalohmq", "name": "Soccer" },
+    "ruleset": { "id": "79plas4983031idr6vw83nuel", "name": "Men" },
+    "competition": {
+      "id": "e21cf135btr8t3upw0vl6n6x0",
+      "name": "Premiership",
+      "knownName": "Scottish Premiership",
+      "sponsorName": "William Hill Premiership",
+      "competitionCode": "PRE",
+      "competitionFormat": "Domestic league",
+      "country": { "id": "1xf68d0a8lnnq30hnnn8kr6ut", "name": "Scotland" }
+    },
+    "tournamentCalendar": {
+      "id": "87b2o38m190egljltsudvz7ys",
+      "startDate": "2025-08-02Z",
+      "endDate": "2026-05-17Z",
+      "name": "2025/2026"
+    },
+    "stage": {
+      "id": "87x6z3thdu4ovw9rv7pwc3e38",
+      "formatId": "36u9089d33h0ojby6bvbwl49h",
+      "startDate": "2025-08-02Z",
+      "endDate": "2026-04-11Z",
+      "name": "1st Phase"
+    },
+    "contestant": [
+      {
+        "id": "dvnjvad3p09dugr79gktlrtll",
+        "name": "Celtic",
+        "shortName": "Celtic",
+        "officialName": "Celtic FC",
+        "code": "CEL",
+        "position": "home",
+        "country": { "id": "1xf68d0a8lnnq30hnnn8kr6ut", "name": "Scotland" }
+      },
+      {
+        "id": "enzoyc121va61wtmjf4cm7p3d",
+        "name": "Kilmarnock",
+        "shortName": "Kilmarnock",
+        "officialName": "Kilmarnock FC",
+        "code": "KIL",
+        "position": "away",
+        "country": { "id": "1xf68d0a8lnnq30hnnn8kr6ut", "name": "Scotland" }
+      }
+    ],
+    "venue": {
+      "id": "aajnr37786kqjcuz93zv5umxq",
+      "neutral": "no",
+      "longName": "Celtic Park",
+      "shortName": "Celtic Park",
+      "latitude": "55.849719363",
+      "longitude": "-4.205580354"
+    }
+  },
+  "messages": [
+    {
+      "language": "en-gb",
+      "message": [
+        {
+          "id": "2871823053",
+          "comment": "Match ends, Celtic 4, Kilmarnock 0.",
+          "timestamp": "2025-11-09T17:53:02Z",
+          "lastModified": "2025-11-09T17:53:26Z",
+          "minute": "0",
+          "period": "14",
+          "second": "0",
+          "time": " ",
+          "type": "end 14",
+          "teamRef1": "enzoyc121va61wtmjf4cm7p3d",
+          "teamRef2": "dvnjvad3p09dugr79gktlrtll"
+        },
+        {
+          "id": "2871822503",
+          "comment": "Second Half ends, Celtic 4, Kilmarnock 0.",
+          "timestamp": "2025-11-09T17:52:34Z",
+          "lastModified": "2025-11-09T17:52:59Z",
+          "minute": "93",
+          "period": "2",
+          "second": "0",
+          "time": "90'+3'",
+          "type": "end 2",
+          "teamRef1": "enzoyc121va61wtmjf4cm7p3d",
+          "teamRef2": "dvnjvad3p09dugr79gktlrtll"
+        },
+        {
+          "id": "2871821963",
+          "comment": "Goal! Celtic 4, Kilmarnock 0. Arne Engels (Celtic) converts the penalty with a right footed shot to the bottom left corner.",
+          "timestamp": "2025-11-09T17:52:20Z",
+          "lastModified": "2025-11-11T17:11:26Z",
+          "minute": "92",
+          "period": "2",
+          "second": "46",
+          "time": "90'+3'",
+          "type": "penalty goal",
+          "playerRef1": "b6woton2db3w4rm67vu69buy2",
+          "teamRef1": "dvnjvad3p09dugr79gktlrtll",
+          "teamRef2": "enzoyc121va61wtmjf4cm7p3d"
+        },
+        {
+          "id": "2871820809",
+          "comment": "Penalty Celtic. Yang Hyun-Jun draws a foul in the penalty area.",
+          "timestamp": "2025-11-09T17:51:06Z",
+          "lastModified": "2025-11-09T17:52:37Z",
+          "minute": "91",
+          "period": "2",
+          "second": "31",
+          "time": "90'+2'",
+          "type": "penalty won",
+          "playerRef1": "mvn1u3p4yeecbjobvsuontp0",
+          "teamRef1": "dvnjvad3p09dugr79gktlrtll"
+        },
+        {
+          "id": "2871820849",
+          "comment": "Penalty conceded by James Brown (Kilmarnock) after a foul in the penalty area.",
+          "timestamp": "2025-11-09T17:51:06Z",
+          "lastModified": "2025-11-09T17:52:37Z",
+          "minute": "91",
+          "period": "2",
+          "second": "31",
+          "time": "90'+2'",
+          "type": "penalty lost",
+          "playerRef1": "3uqh7k40ljd51zzyxeora2yg9",
+          "teamRef1": "enzoyc121va61wtmjf4cm7p3d"
+        },
+        {
+          "id": "2871819353",
+          "comment": "Fourth official has announced 2 minutes of added time.",
+          "timestamp": "2025-11-09T17:49:34Z",
+          "lastModified": "2025-11-11T17:08:37Z",
+          "minute": "90",
+          "period": "2",
+          "second": "0",
+          "time": "90'",
+          "type": "added time",
+          "teamRef1": "dvnjvad3p09dugr79gktlrtll",
+          "teamRef2": "enzoyc121va61wtmjf4cm7p3d"
+        },
+        {
+          "id": "2871817959",
+          "comment": "Corner, Kilmarnock. Conceded by Kieran Tierney.",
+          "timestamp": "2025-11-09T17:48:21Z",
+          "lastModified": "2025-11-11T17:07:17Z",
+          "minute": "88",
+          "period": "2",
+          "second": "46",
+          "time": "89'",
+          "type": "corner",
+          "playerRef1": "8i5ee4fmkqhl1rcuo31qomxud",
+          "teamRef1": "dvnjvad3p09dugr79gktlrtll",
+          "teamRef2": "enzoyc121va61wtmjf4cm7p3d"
+        }
+      ]
+    }
+  ]
+}
