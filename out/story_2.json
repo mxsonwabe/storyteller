@@ -1,0 +1,66 @@
+{
+  "pack_id": "6lqto88nzncqhvtv45a0rmcyc",
+  "title": "Celtic vs Kilmarnock",
+  "source": "data/match_events.json",
+  "pages": [
+    {
+      "type": "cover",
+      "headline": "Celtic vs Kilmarnock",
+      "image": "assets/placeholder.png"
+    },
+    {
+      "type": "highlight",
+      "minute": 9,
+      "headline": "9' GOAL! -- Goal! Celtic 1, Kilmarnock 0",
+      "caption": "Goal! Celtic 1, Kilmarnock 0. Johnny Kenny (Celtic) left footed shot from very close range to the bottom left corner. Assisted by Reo Hatate.",
+      "image": "assets/placeholder.png"
+    },
+    {
+      "type": "highlight",
+      "minute": 50,
+      "headline": "50' GOAL! -- Goal! Celtic 2, Kilmarnock 0",
+      "caption": "Goal! Celtic 2, Kilmarnock 0. Kieran Tierney (Celtic) left footed shot from outside the box to the bottom right corner. Assisted by Liam Scales.",
+      "image": "assets/placeholder.png"
+    },
+    {
+      "type": "highlight",
+      "minute": 84,
+      "headline": "84' GOAL! -- Goal! Celtic 3, Kilmarnock 0",
+      "caption": "Goal! Celtic 3, Kilmarnock 0. Daizen Maeda (Celtic) right footed shot from the right side of the box to the bottom right corner. Assisted by Arne Engels with a through ball.",
+      "image": "assets/placeholder.png"
+    },
+    {
+      "type": "highlight",
+      "minute": 86,
+      "headline": "86' CHANCE! -- Attempt saved",
+      "caption": "Attempt saved. Daizen Maeda (Celtic) right footed shot from outside the box is saved in the centre of the goal by Eddie Beach (Kilmarnock). Assisted by Anthony Ralston with a through ball.",
+      "image": "assets/placeholder.png"
+    },
+    {
+      "type": "highlight",
+      "minute": 91,
+      "headline": "91' PENALTY MISSED! -- Penalty conceded by James Brown (Kilmarnock) after a foul in the penalty area",
+      "caption": "Penalty conceded by James Brown (Kilmarnock) after a foul in the penalty area.",
+      "image": "assets/placeholder.png"
+    },
+    {
+      "type": "highlight",
+      "minute": 91,
+      "headline": "91' PENALTY! -- Penalty Celtic",
+      "caption": "Penalty Celtic. Yang Hyun-Jun draws a foul in the penalty area.",
+      "image": "assets/placeholder.png"
+    },
+    {
+      "type": "highlight",
+      "minute": 92,
+      "headline": "92' GOAL! -- Goal! Celtic 4, Kilmarnock 0",
+      "caption": "Goal! Celtic 4, Kilmarnock 0. Arne Engels (Celtic) converts the penalty with a right footed shot to the bottom left corner.",
+      "image": "assets/placeholder.png"
+    }
+  ],
+  "created_at": "2025-11-09 00:00:00",
+  "metrics": {
+    "goals": 4,
+    "highlights": 7
+  }
+}

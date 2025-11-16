@@ -1,11 +1,14 @@
 import json
 import uuid
+
 from datetime import datetime
 from typing import Any, Dict, List
 
 from jsonschema import Draft202012Validator, ValidationError
 
 from models import CoverPage, HighlightPage, InfoPage, Page, StoryPack
+from generate import generate_caption
+from cli import get_args
 
 INPUT_DATA = "data/match_events.json"
 SCHEMA_DEFINITION = "schema/story.schema.json"
@@ -27,6 +30,7 @@ TYPE_TO_WEIGHT_KEY_MAP = {
     "substitution": "substitution",
     "penalty won": "shot_on_target",  # A won penalty is a high-value event
 }
+
 
 
 def getStoryData(
@@ -108,6 +112,7 @@ def getStoryData(
         msg_type: str = msg.get("type", "")
         minute: int = int(msg.get("minute", 0))
         comment: str = msg.get("comment", "")
+        ai_caption: str = generate_caption(msg)
 
         if msg_type in ["goal", "penalty goal"]:
             goals_count += 1
@@ -135,7 +140,7 @@ def getStoryData(
                 HighlightPage(
                     type="highlight",
                     headline=headline,
-                    caption=comment,
+                    caption=ai_caption if ai_caption else comment,
                     minute=minute,
                     image="assets/placeholder.png",
                 )
@@ -177,7 +182,7 @@ def createStoryPack() -> StoryPack:
     messages: List[Dict[str, Any]] = data["messages"][0]["message"]
 
     # Pass weights data to getStoryData
-    pages, metrics = getStoryData(
+    pages, metrics= getStoryData(
         matchInfo=matchInfo, messages=messages, weights_data=weights_data
     )
     dt = str(datetime.fromisoformat(matchInfo["date"].replace("Z", "+00:00")))
@@ -204,22 +209,31 @@ def main():
     # story_pack = story.model_dump_json(indent=2)
     story_pack = story.model_dump(exclude_none=True)
 
-    try:
-        with open(SCHEMA_DEFINITION) as f:
-            schema = json.load(f)
-            validator = Draft202012Validator(schema)
-            validator.validate(story_pack)
-            print("Valid!")
-            print(story.model_dump_json(indent=2))
+    args = get_args()
 
-            # Save to story.json
-            output_path = "out/story.json"
-            with open(output_path, "w") as out:
-                json.dump(story_pack, out, indent=2)
+    if args.strict:
+        try:
+            with open(SCHEMA_DEFINITION) as f:
+                schema = json.load(f)
+                validator = Draft202012Validator(schema)
+                validator.validate(story_pack)
+                print("Valid!")
+                print(story.model_dump_json(indent=2))
 
-            print(f"Saved story pack to {output_path}")
-    except ValidationError as e:
-        print(f"Schema Invalid: {e}")
+                # Save to story.json
+                output_path = "out/story.json"
+                with open(output_path, "w") as out:
+                    json.dump(story_pack, out, indent=2)
+
+        except ValidationError as e:
+            print(f"Schema Invalid: {e}")
+            return
+
+    # Save to story.json
+    output_path = args.output
+    with open(output_path, "w") as out:
+        json.dump(story_pack, out, indent=2)
+        print(f"Saved story pack to {output_path}")
 
 
 if __name__ == "__main__":
