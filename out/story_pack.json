@@ -1,0 +1,66 @@
+{
+  "pack_id": "6lqto88nzncqhvtv45a0rmcyc",
+  "title": "Celtic vs Kilmarnock",
+  "source": "data/match_events.json",
+  "pages": [
+    {
+      "type": "cover",
+      "headline": "Celtic vs Kilmarnock",
+      "image": "assets/placeholder.png"
+    },
+    {
+      "type": "highlight",
+      "minute": 9,
+      "headline": "9' GOAL! -- Goal! Celtic 1, Kilmarnock 0",
+      "caption": "Celtic takes the lead early! Johnny Kenny scores from close range with a left-footed shot into the bottom corner. Reo Hatate provided the assist.\n",
+      "image": "assets/21522057.jpg"
+    },
+    {
+      "type": "highlight",
+      "minute": 50,
+      "headline": "50' GOAL! -- Goal! Celtic 2, Kilmarnock 0",
+      "caption": "What a strike from Kieran Tierney! The Celtic left-back unleashed a powerful left-footed shot from outside the box. The ball nestled perfectly into the bottom right corner, extending Celtic's lead to 2-0 against Kilmarnock.\n",
+      "image": "assets/21522328.jpg"
+    },
+    {
+      "type": "highlight",
+      "minute": 84,
+      "headline": "84' GOAL! -- Goal! Celtic 3, Kilmarnock 0",
+      "caption": "Celtic extends their lead! Daizen Maeda scores with a right-footed shot from the right side of the box, finding the bottom right corner. Arne Engels provided the assist with a precise through ball. The score now stands at 3-0 in the 85th minute.\n",
+      "image": "assets/21522413.jpg"
+    },
+    {
+      "type": "highlight",
+      "minute": 86,
+      "headline": "86' CHANCE! -- Attempt saved",
+      "caption": "Daizen Maeda (Celtic) unleashes a right-footed shot from outside the box in the 87th minute, but Kilmarnock's Eddie Beach makes a crucial save. Anthony Ralston provided the assist with a perfectly weighted through ball. The game remains tightly contested as the clock ticks down.\n",
+      "image": "assets/21522413.jpg"
+    },
+    {
+      "type": "highlight",
+      "minute": 91,
+      "headline": "91' PENALTY MISSED! -- Penalty conceded by James Brown (Kilmarnock) after a foul in the penalty area",
+      "caption": "A late penalty is awarded to Celtic after James Brown commits a foul in the penalty area. However, the Celtic player fails to convert the penalty, sending the ball wide of the goal. A huge let-off for Kilmarnock!\n",
+      "image": "assets/21522436.jpg"
+    },
+    {
+      "type": "highlight",
+      "minute": 91,
+      "headline": "91' PENALTY! -- Penalty Celtic",
+      "caption": "Penalty for Celtic! Yang Hyun-Jun wins a penalty after being fouled in the box. Big chance for Celtic to snatch a late goal.\n",
+      "image": "assets/21522436.jpg"
+    },
+    {
+      "type": "highlight",
+      "minute": 92,
+      "headline": "92' GOAL! -- Goal! Celtic 4, Kilmarnock 0",
+      "caption": "Goal! Arne Engels seals the victory for Celtic, converting a penalty with a precise right-footed shot into the bottom left corner. Celtic now lead Kilmarnock 4-0. The final whistle is about to blow on a dominant performance.\n",
+      "image": "assets/21522436.jpg"
+    }
+  ],
+  "created_at": "2025-11-09 00:00:00",
+  "metrics": {
+    "goals": 4,
+    "highlights": 7
+  }
+}

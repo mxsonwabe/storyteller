@@ -88,7 +88,7 @@ def getStoryData(
         CoverPage(
             type="cover",
             headline=matchInfo["description"],
-            image="assets/placeholder.png",
+            image="assets/assets/21521989.jpg",
         )
     )
 
@@ -112,7 +112,8 @@ def getStoryData(
         msg_type: str = msg.get("type", "")
         minute: int = int(msg.get("minute", 0))
         comment: str = msg.get("comment", "")
-        ai_caption: str = generate_caption(msg)
+        asset, ai_caption = generate_caption(msg)
+        print(f"asset: {asset}")
 
         if msg_type in ["goal", "penalty goal"]:
             goals_count += 1
@@ -132,7 +133,7 @@ def getStoryData(
             elif msg_type == "penalty won":
                 headline = f"{minute}' PENALTY! -- {comment.split('.')[0]}"
             elif msg_type == "penalty lost":
-                headline = f"{minute}' PENALTY MISSED! -- {comment.split('.')[0]}"
+                headline = f"{minute}' PENALTY CONCEDED! -- {comment.split('.')[0]}"
             else:
                  headline = f"{minute}' {msg_type.upper()} -- {comment.split('.')[0]}"
 
@@ -142,7 +143,7 @@ def getStoryData(
                     headline=headline,
                     caption=ai_caption if ai_caption else comment,
                     minute=minute,
-                    image="assets/placeholder.png",
+                    image=asset,
                 )
             )
         else:
